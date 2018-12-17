@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Game from './TestComponent';
+import logo from './assets/logo.svg';
+import './styles/css/App.css';
+import Game from './components/TestComponent';
 
 class App extends Component {
   render() {
@@ -9,6 +9,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <Game/>
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
@@ -21,7 +22,6 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        <Game/>
       </div>
     );
   }
