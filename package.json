@@ -15,7 +15,8 @@
     "eject": "react-scripts eject",
     "now-build": "npm run build && mv build dist",
     "build-css": "node-sass-chokidar src/styles/scss/ -o src/styles/css",
-    "watch-css": "npm run build-css && node-sass-chokidar src/styles/scss -o src/css --watch --recursive"
+    "watch-css": "npm run build-css && node-sass-chokidar src/styles/scss -o src/css --watch --recursive",
+    "postinstall": "npm run build-css"
   },
   "eslintConfig": {
     "extends": "react-app"
