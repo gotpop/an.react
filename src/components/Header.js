@@ -5,25 +5,19 @@ class Header extends Component {
 
     state = {
       text: "Logo",
-      menuItems: [
-        {
-          key: 1,
-          title: "Step 1"
-        },
-        {
-          key: 2,
-          title: "Step 2"
-        },
-        {
-          key: 3,
-          title: "Step 3"
-        }
-      ]
+      score: 25,
     };
 
-    make() {
-      console.log('Hahahahaha');
+    make = () => {
+      this.setState( prevSate => {
+        return {
+          score: prevSate.score + 1
+        }
+      });
+        console.log(this.props)
     }
+
+
   
     render() {
       return (
@@ -34,12 +28,13 @@ class Header extends Component {
           </section>
           <div className="he-nav">
             <nav className="he-nav__bar">
-              <a className="he-nav__item">Menu item</a>
-              <a className="he-nav__item">Menu item</a>
-              <a className="he-nav__item">Menu item</a>
+              {this.props.menuItems.map( player => 
+                <a href="/" className="he-nav__item">{ player.title }</a>
+              )}
             </nav>
             <div className="he-nav__image-wrap" onClick={this.make}>
               <img src={logo} className="he-hav__image" alt="logo" />
+              <small className="he-nav__small">{ this.state.score }</small>
             </div>
           </div>
         </header>
