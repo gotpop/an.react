@@ -20,6 +20,10 @@ class Header extends Component {
         }
       ]
     };
+
+    make() {
+      console.log('Hahahahaha');
+    }
   
     render() {
       return (
@@ -34,6 +38,9 @@ class Header extends Component {
               <a className="he-nav__item">Menu item</a>
               <a className="he-nav__item">Menu item</a>
             </nav>
+            <div className="he-nav__image-wrap" onClick={this.make}>
+              <img src={logo} className="he-hav__image" alt="logo" />
+            </div>
           </div>
         </header>
       );
