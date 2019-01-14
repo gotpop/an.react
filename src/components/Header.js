@@ -9,6 +9,14 @@ class Header extends Component {
         {
           key: 1,
           title: "Menu item"
+        },
+        {
+          key: 2,
+          title: "Menu item"
+        },
+        {
+          key: 3,
+          title: "Menu item"
         }
       ]
     };
