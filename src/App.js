@@ -11,14 +11,17 @@ class App extends Component {
     score: 25,
     menuItems: [
       {
+        key: 1,
         id: 1,
         title: "Step 1"
       },
       {
+        key: 2,
         id: 2,
         title: "Step 2"
       },
       {
+        key: 3,
         id: 3,
         title: "Step 3"
       }

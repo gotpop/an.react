@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../assets/logo.svg';
+import MenuItem from './MenuItem';
 
 class Header extends Component {
 
@@ -14,11 +15,8 @@ class Header extends Component {
           score: prevSate.score + 1
         }
       });
-        console.log(this.props)
     }
 
-
-  
     render() {
       return (
         <header className="he">
@@ -29,7 +27,10 @@ class Header extends Component {
           <div className="he-nav">
             <nav className="he-nav__bar">
               {this.props.menuItems.map( player => 
-                <a href="/" className="he-nav__item">{ player.title }</a>
+                <MenuItem 
+                  player={player}
+                  key={player.id}
+                />
               )}
             </nav>
             <div className="he-nav__image-wrap" onClick={this.make}>
