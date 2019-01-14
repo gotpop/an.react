@@ -8,7 +8,7 @@ class Game extends React.Component {
         // Render JSX
         return (
           <div>
-            <h1>Rendered new component!</h1>
+            <h1>Rendered new component!!</h1>
           </div>
         );
     }
