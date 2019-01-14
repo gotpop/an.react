@@ -4,7 +4,13 @@ import logo from '../assets/logo.svg';
 class Header extends Component {
 
     state = {
-      text: "Logo"
+      text: "Logo",
+      menuItems: [
+        {
+          key: 1,
+          title: "Menu item"
+        }
+      ]
     };
   
     render() {
