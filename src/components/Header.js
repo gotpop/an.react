@@ -8,15 +8,15 @@ class Header extends Component {
       menuItems: [
         {
           key: 1,
-          title: "Menu item"
+          title: "Step 1"
         },
         {
           key: 2,
-          title: "Menu item"
+          title: "Step 2"
         },
         {
           key: 3,
-          title: "Menu item"
+          title: "Step 3"
         }
       ]
     };
