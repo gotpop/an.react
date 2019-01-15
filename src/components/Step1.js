@@ -11,21 +11,25 @@ class Main extends Component {
       email: ""
     };
 
-    change = (e) => {
+    handleInputChange = (e) => {
       this.setState({ 
         [e.target.name]: e.target.value})
     }
 
-    onSubmit = (e) => {
+    handleSubmit = (e) => {
       e.preventDefault();
       // console.log('this.props', this.props);
     }
   
     render() {
+      const { fullname } = this.state.text
       return (
         <main className="ap__route ma">
-          <h2 className="ma_title">{ this.state.text }</h2>
-          <form onSubmit={}>
+          <h2 className="ma_title">{ this.state.firstName }</h2>
+          <pre>
+            { fullname }
+          </pre>
+          <form onSubmit={this.handleSubmit}>
             <fieldset>
               <legend>Details</legend>
               
@@ -38,7 +42,7 @@ class Main extends Component {
                     placeholder="John"
                     name="firstName"
                     value={this.state.firstName}
-                    onChange={e => this.change(e)}
+                    onChange={e => this.handleInputChange(e)}
                   />
                   <svg></svg>
                 </div>
@@ -65,8 +69,6 @@ class Main extends Component {
 
               <div className="action-row">
                 <button 
-                  onClick={e => this.onSubmit(e).bind(this)}
-
                   type="submit">Submit</button>
               </div>
             </fieldset>
