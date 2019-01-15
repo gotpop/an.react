@@ -82,7 +82,7 @@ class Main extends Component {
                   type="reset">Cancel</button>
                 <button
                   className="btn btn--primary"
-                  type="submit">Submit</button>
+                  type="submit">Continue</button>
               </div>
             </fieldset>
           </form>
