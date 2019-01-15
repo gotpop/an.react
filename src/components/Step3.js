@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from "./Button";
 
-class Main extends Component {
+class Step3 extends Component {
 
     state = {
       text: "Step 3"
@@ -17,4 +17,4 @@ class Main extends Component {
     }
   }
 
-  export default Main;
+  export default Step3;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import Input from "./forms/Input";
 
-class Main extends Component {
+class Step1 extends Component {
 
     state = {
       title: "Step 1",
@@ -91,4 +91,4 @@ class Main extends Component {
     }
   }
 
-  export default Main;
+  export default Step1;
