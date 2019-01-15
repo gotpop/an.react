@@ -14,6 +14,7 @@ class App extends Component {
   state = {
     text: "Logo",
     score: 25,
+    registerusername: null,
     menuItems: [
       {
         key: 1,
@@ -42,13 +43,20 @@ class App extends Component {
     ]
   };
 
+  setName() {
+    alert('Helllllllooooo!');
+  }
+  
+  
   render() {
+    console.log(this.setName);
     return (
       <BrowserRouter>
         <div className="ap">
           <Header menuItems={this.state.menuItems} />
           <Route exact path="/" component={Home} />
-          <Route path="/step1" render={ () => <Step1 title="This is step 1 !!!" />} />
+          <Route path="/step1" render={ () => <Step1 setName={this.setName} />} />
+          {/* <Route path="/step1" setName={this.setName} component={Step1} /> */}
           <Route path="/step2" component={Step2} />
           <Route path="/step3" component={Step3} />
           <Footer />

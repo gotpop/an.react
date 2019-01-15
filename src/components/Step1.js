@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import Button from "./Button";
 // import Input from "./forms/Input";
 
 class Main extends Component {
 
     state = {
-      text: "Step 1",
+      title: "Step 1",
       firstName: "",
       lastName: "",
       email: ""
@@ -18,20 +17,20 @@ class Main extends Component {
 
     handleSubmit = (e) => {
       e.preventDefault();
-      // console.log('this.props', this.props);
+      
+      console.log('this.props.setName(e.target.value):', this.props.setName);
+      console.log('this.state', this.state);
+
+      
     }
   
     render() {
-      const { fullname } = this.state.firstName
       return (
         <main className="ap__route ma">
-          <h2 className="ma_title">{ this.state.firstName }</h2>
-          <pre>
-            { fullname }
-          </pre>
-          <form onSubmit={this.handleSubmit}>
-            <fieldset>
-              <legend>Details</legend>
+          <h2 className="ma_title">{ this.state.title }</h2>
+          <form className="form" onSubmit={this.handleSubmit}>
+            <fieldset className="form__fieldset">
+              <legend className="form__legend">Details</legend>
               
               <div className="field">
                 <label className="field__label">This is a first name input</label>
@@ -56,7 +55,7 @@ class Main extends Component {
                     className="field__input" 
                     type="text" 
                     placeholder="Smith"
-                    name="lasttName"
+                    name="lastName"
                     value={this.state.lastName}
                     onChange={e => this.handleInputChange(e)}
                   />
