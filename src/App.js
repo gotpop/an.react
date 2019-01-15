@@ -43,22 +43,23 @@ class App extends Component {
     ]
   };
 
-  setName() {
-    alert('Helllllllooooo!');
-  }
-  
+  setNameInApp = (maState) => {
+    console.log('Helllllllooooo!', this.state);
+    this.setState({
+      formDetails: maState
+    });
+  };
   
   render() {
-    console.log(this.setName);
     return (
       <BrowserRouter>
         <div className="ap">
           <Header menuItems={this.state.menuItems} />
           <Route exact path="/" component={Home} />
           {/* Render components to pass props */}
-          <Route path="/step1" render={ () => <Step1 setName={this.setName} />} />
-          <Route path="/step2" render={ () => <Step2 setName={this.setName} />} />
-          <Route path="/step3" render={ () => <Step3 setName={this.setName} />} />
+          <Route path="/step1" render={ () => <Step1 setNameInApp={this.setNameInApp} />} />
+          <Route path="/step2" render={ () => <Step2 setNameInApp={this.setNameInApp} />} />
+          <Route path="/step3" render={ () => <Step3 setNameInApp={this.setNameInApp} />} />
           <Footer />
         </div>
       </BrowserRouter>

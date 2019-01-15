@@ -17,7 +17,7 @@ class Main extends Component {
 
     handleSubmit = (e) => {
       e.preventDefault();
-      this.props.setName();
+      this.props.setNameInApp(this.state);
     }
   
     render() {
