@@ -55,10 +55,10 @@ class App extends Component {
         <div className="ap">
           <Header menuItems={this.state.menuItems} />
           <Route exact path="/" component={Home} />
+          {/* Render components to pass props */}
           <Route path="/step1" render={ () => <Step1 setName={this.setName} />} />
-          {/* <Route path="/step1" setName={this.setName} component={Step1} /> */}
-          <Route path="/step2" component={Step2} />
-          <Route path="/step3" component={Step3} />
+          <Route path="/step2" render={ () => <Step2 setName={this.setName} />} />
+          <Route path="/step3" render={ () => <Step3 setName={this.setName} />} />
           <Footer />
         </div>
       </BrowserRouter>
