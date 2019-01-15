@@ -11,6 +11,13 @@
   grid-template-columns: 1fr 6fr 1fr;
 }
 
+.ap__route {
+  background: yellow;
+  background: lightgrey;
+  grid-area: main;
+  padding: 2rem;
+}
+
 .he {
   grid-area: header;
   display: flex;
@@ -59,11 +66,11 @@
   cursor: pointer;
 }
 
-.ma {
-  background: lightgrey;
-  grid-area: main;
-  padding: 2rem;
+.he-nav__image {
+  max-width: 70px;
 }
+
+
 
 .fo {
   background: darkslategrey;
