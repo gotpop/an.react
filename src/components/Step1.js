@@ -83,6 +83,9 @@ class Main extends Component {
 
               <div className="action-row">
                 <button
+                  className="btn btn--secondary"
+                  type="reset">Cancel</button>
+                <button
                   className="btn btn--primary"
                   type="submit">Submit</button>
               </div>

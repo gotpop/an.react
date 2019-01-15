@@ -146,7 +146,12 @@ legend {
 }
 
 .btn {
-  background: hotpink;
+  background: lightgray;
   padding: 1rem 2rem;
   border: none;
+}
+
+.btn--primary {
+  background: hotpink;
+  margin-left: 1rem;
 }
