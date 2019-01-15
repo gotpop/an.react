@@ -14,7 +14,7 @@ class App extends Component {
   state = {
     text: "Logo",
     score: 25,
-    registerusername: null,
+    formDetails: null,
     menuItems: [
       {
         key: 1,
