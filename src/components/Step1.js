@@ -18,10 +18,10 @@ class Main extends Component {
     handleSubmit = (e) => {
       e.preventDefault();
       
-      console.log('this.props.setName(e.target.value):', this.props.setName);
+      console.log('this.props.setName(e.target.value):', this.props);
       console.log('this.state', this.state);
 
-      
+      this.props.setName();
     }
   
     render() {
