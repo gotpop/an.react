@@ -46,7 +46,39 @@ class Main extends Component {
                   />
                   <svg className="field__svg"></svg>
                 </div>
-                <small className="field__validation">This is a validation message</small>
+                <small className="field__validation">This is a validation message for first name</small>
+              </div>
+
+              <div className="field">
+                <label className="field__label">This is a last name input</label>
+                <div className="field__wrap">
+                  <input 
+                    className="field__input" 
+                    type="text" 
+                    placeholder="Smith"
+                    name="lasttName"
+                    value={this.state.lastName}
+                    onChange={e => this.handleInputChange(e)}
+                  />
+                  <svg className="field__svg"></svg>
+                </div>
+                <small className="field__validation">This is a validation message for last name</small>
+              </div>
+
+              <div className="field">
+                <label className="field__label">This is an email input</label>
+                <div className="field__wrap">
+                  <input 
+                    className="field__input" 
+                    type="text" 
+                    placeholder="email@email.com"
+                    name="email"
+                    value={this.state.email}
+                    onChange={e => this.handleInputChange(e)}
+                  />
+                  <svg className="field__svg"></svg>
+                </div>
+                <small className="field__validation">This is an email validation message</small>
               </div>
 
               <div className="action-row">
@@ -56,7 +88,6 @@ class Main extends Component {
               </div>
             </fieldset>
           </form>
-          <Button />
         </main>
       );
     }
