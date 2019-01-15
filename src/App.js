@@ -7,8 +7,6 @@ import Home from './components/Home';
 import Step1 from './components/Step1';
 import Step2 from './components/Step2';
 import Step3 from './components/Step3';
-
-
 class App extends Component {
   
   state = {
@@ -48,6 +46,18 @@ class App extends Component {
       formDetails: maState
     });
   };
+
+  setNameInApp2 = (maState) => {
+    this.setState({
+      formDetails2: maState
+    });
+  };
+
+  setNameInApp3 = (maState) => {
+    this.setState({
+      formDetails3: maState
+    });
+  };
   
   render() {
     return (
@@ -57,8 +67,8 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           {/* Render components to pass props */}
           <Route path="/step1" render={ () => <Step1 setNameInApp={this.setNameInApp} />} />
-          <Route path="/step2" render={ () => <Step2 setNameInApp={this.setNameInApp} />} />
-          <Route path="/step3" render={ () => <Step3 setNameInApp={this.setNameInApp} />} />
+          <Route path="/step2" render={ () => <Step2 setNameInApp={this.setNameInApp2} />} />
+          <Route path="/step3" render={ () => <Step3 setNameInApp={this.setNameInApp3} />} />
           <Footer />
         </div>
       </BrowserRouter>
