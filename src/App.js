@@ -44,7 +44,6 @@ class App extends Component {
   };
 
   setNameInApp = (maState) => {
-    console.log('Helllllllooooo!', this.state);
     this.setState({
       formDetails: maState
     });
