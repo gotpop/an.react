@@ -15,9 +15,16 @@ class Main extends Component {
           <form>
             <fieldset>
               <legend>Details</legend>
-              <Input />
-              <Input />
-              <Input />
+              
+              <div className="input">
+                <label>This is an input</label>
+                <div className="input__wrap">
+                  <input className="input__input" type="text"/>
+                  <svg></svg>
+                </div>
+                <small className="input__validation">This is a validation message</small>
+              </div>
+
               <button type="submit">Submit</button>
             </fieldset>
           </form>
