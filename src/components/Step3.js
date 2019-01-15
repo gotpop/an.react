@@ -28,19 +28,19 @@ class Step3 extends Component {
             <legend className="form__legend">Details</legend>
             
             <div className="field">
-              <label className="field__label">This is a first name input</label>
+              <label className="field__label">This is a uusername input</label>
               <div className="field__wrap">
                 <input 
                   className="field__input" 
                   type="text" 
                   placeholder="John"
                   name="firstName"
-                  value={this.state.firstName}
+                  value={this.state.username}
                   onChange={e => this.handleInputChange(e)}
                 />
                 <svg className="field__svg"></svg>
               </div>
-              <small className="field__validation">This is a validation message for first name</small>
+              <small className="field__validation">This is a validation message for username</small>
             </div>
 
             <div className="field">
@@ -51,12 +51,12 @@ class Step3 extends Component {
                   type="text" 
                   placeholder="Smith"
                   name="lastName"
-                  value={this.state.lastName}
+                  value={this.state.password}
                   onChange={e => this.handleInputChange(e)}
                 />
                 <svg className="field__svg"></svg>
               </div>
-              <small className="field__validation">This is a validation message for last name</small>
+              <small className="field__validation">This is a validation message</small>
             </div>
 
             <div className="field">
@@ -67,12 +67,12 @@ class Step3 extends Component {
                   type="text" 
                   placeholder="email@email.com"
                   name="email"
-                  value={this.state.email}
+                  value={this.state.confirmPassword}
                   onChange={e => this.handleInputChange(e)}
                 />
                 <svg className="field__svg"></svg>
               </div>
-              <small className="field__validation">This is an email validation message</small>
+              <small className="field__validation">This is a validation message</small>
             </div>
 
             <div className="action-row">
@@ -81,7 +81,7 @@ class Step3 extends Component {
                 type="reset">Cancel</button>
               <button
                 className="btn btn--primary"
-                type="submit">Continue</button>
+                type="submit">Submit</button>
             </div>
           </fieldset>
         </form>

@@ -20,10 +20,10 @@ class Step2 extends Component {
     this.props.setNameInApp(this.state);
   }
   
-render() {
-      return (
-        <main className="ap__route ma">
-          <h2 className="ma_title">{ this.state.title }</h2>
+  render() {
+    return (
+      <main className="ap__route ma">
+        <h2 className="ma_title">{ this.state.title }</h2>
           <form className="form" onSubmit={this.handleSubmit}>
             <fieldset className="form__fieldset">
               <legend className="form__legend">Details</legend>
@@ -85,6 +85,7 @@ render() {
                   type="submit">Continue</button>
               </div>
             </fieldset>
+            
           </form>
         </main>
       );
