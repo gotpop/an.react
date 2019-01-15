@@ -22,7 +22,7 @@ class Main extends Component {
     }
   
     render() {
-      const { fullname } = this.state.text
+      const { fullname } = this.state.firstName
       return (
         <main className="ap__route ma">
           <h2 className="ma_title">{ this.state.firstName }</h2>
@@ -34,7 +34,7 @@ class Main extends Component {
               <legend>Details</legend>
               
               <div className="field">
-                <label>This is a first name input</label>
+                <label className="field__label">This is a first name input</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
@@ -44,31 +44,14 @@ class Main extends Component {
                     value={this.state.firstName}
                     onChange={e => this.handleInputChange(e)}
                   />
-                  <svg></svg>
-                </div>
-                <small className="field__validation">This is a validation message</small>
-              </div>
-
-              <div className="field">
-                <label>This is a last name input</label>
-                <div className="field__wrap">
-                  <input className="field__input" type="text"/>
-                  <svg></svg>
-                </div>
-                <small className="field__validation">This is a validation message</small>
-              </div>
-
-              <div className="field">
-                <label>This is an email input</label>
-                <div className="field__wrap">
-                  <input className="field__input" type="email"/>
-                  <svg></svg>
+                  <svg className="field__svg"></svg>
                 </div>
                 <small className="field__validation">This is a validation message</small>
               </div>
 
               <div className="action-row">
-                <button 
+                <button
+                  className="btn btn--primary"
                   type="submit">Submit</button>
               </div>
             </fieldset>
