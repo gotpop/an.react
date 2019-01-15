@@ -18,17 +18,26 @@ class App extends Component {
       {
         key: 1,
         id: 1,
-        title: "Step 1"
+        title: "Home",
+        url: "/"
       },
       {
         key: 2,
         id: 2,
-        title: "Step 2"
+        title: "Step 1",
+        url: "/step1"
       },
       {
         key: 3,
         id: 3,
-        title: "Step 3"
+        title: "Step 2",
+        url: "/step2"
+      },
+      {
+        key: 4,
+        id: 4,
+        title: "Step 3",
+        url: "/step3"
       }
     ]
   };

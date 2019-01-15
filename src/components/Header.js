@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../assets/logo.svg';
 import MenuItem from './MenuItem';
+import { Link } from "react-router-dom";
 
 class Header extends Component {
 
@@ -21,8 +22,10 @@ class Header extends Component {
       return (
         <header className="he">
           <section className="he-logo">
-            <h2 className="he-logo__title">{ this.state.text }</h2>
-            <img src={logo} className="he-logo__image" alt="logo" />
+            <Link to="/">
+              <h2 className="he-logo__title">{ this.state.text }</h2>
+              <img src={logo} className="he-logo__image" alt="logo" />
+            </Link>
           </section>
           <div className="he-nav">
             <nav className="he-nav__bar">

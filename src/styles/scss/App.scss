@@ -55,7 +55,8 @@
   cursor: pointer;
   color: rgba(white, .8);
 
-  &:hover {
+  &:hover,
+  &.active {
     background: black;
     transition: all .4s ease;
   }
