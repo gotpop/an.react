@@ -19,31 +19,31 @@ class Main extends Component {
             <fieldset>
               <legend>Details</legend>
               
-              <div className="input">
+              <div className="field">
                 <label>This is a first name input</label>
-                <div className="input__wrap">
-                  <input className="input__input" type="text"/>
+                <div className="field__wrap">
+                  <input className="field__input" type="text"/>
                   <svg></svg>
                 </div>
-                <small className="input__validation">This is a validation message</small>
+                <small className="field__validation">This is a validation message</small>
               </div>
 
-              <div className="input">
+              <div className="field">
                 <label>This is a last name input</label>
-                <div className="input__wrap">
-                  <input className="input__input" type="text"/>
+                <div className="field__wrap">
+                  <input className="field__input" type="text"/>
                   <svg></svg>
                 </div>
-                <small className="input__validation">This is a validation message</small>
+                <small className="field__validation">This is a validation message</small>
               </div>
 
-              <div className="input">
+              <div className="field">
                 <label>This is an email input</label>
-                <div className="input__wrap">
-                  <input className="input__input" type="email"/>
+                <div className="field__wrap">
+                  <input className="field__input" type="email"/>
                   <svg></svg>
                 </div>
-                <small className="input__validation">This is a validation message</small>
+                <small className="field__validation">This is a validation message</small>
               </div>
 
               <div className="action-row">
