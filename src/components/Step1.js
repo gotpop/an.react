@@ -46,7 +46,9 @@ class Main extends Component {
                 <small className="input__validation">This is a validation message</small>
               </div>
 
-              <button type="submit">Submit</button>
+              <div className="action-row">
+                <button type="submit">Submit</button>
+              </div>
             </fieldset>
           </form>
           <Button />
