@@ -37,7 +37,7 @@ class Header extends Component {
               )}
             </nav>
             <div className="he-nav__image-wrap" onClick={this.make}>
-              <img src={logo} className="he-hav__image" alt="logo" />
+              <img src={logo} className="he-nav__image" alt="logo" />
               <small className="he-nav__small">{ this.state.score }</small>
             </div>
           </div>
