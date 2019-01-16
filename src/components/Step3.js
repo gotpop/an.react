@@ -28,29 +28,29 @@ class Step3 extends Component {
             <legend className="form__legend">Details</legend>
             
             <div className="field">
-              <label className="field__label">This is a uusername input</label>
+              <label className="field__label">Username</label>
               <div className="field__wrap">
                 <input 
                   className="field__input" 
                   type="text" 
-                  placeholder="John"
-                  name="firstName"
+                  placeholder="myusername"
+                  name="username"
                   value={this.state.username}
                   onChange={e => this.handleInputChange(e)}
                 />
                 <svg className="field__svg"></svg>
               </div>
-              <small className="field__validation">This is a validation message for username</small>
+              <small className="field__validation">This is a validation message</small>
             </div>
 
             <div className="field">
-              <label className="field__label">This is a last name input</label>
+              <label className="field__label">Enter a password</label>
               <div className="field__wrap">
                 <input 
                   className="field__input" 
                   type="text" 
                   placeholder="Smith"
-                  name="lastName"
+                  name="password"
                   value={this.state.password}
                   onChange={e => this.handleInputChange(e)}
                 />
@@ -66,7 +66,7 @@ class Step3 extends Component {
                   className="field__input" 
                   type="text" 
                   placeholder="email@email.com"
-                  name="email"
+                  name="confirmPassword"
                   value={this.state.confirmPassword}
                   onChange={e => this.handleInputChange(e)}
                 />

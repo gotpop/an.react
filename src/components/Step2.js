@@ -34,8 +34,8 @@ class Step2 extends Component {
                   <input 
                     className="field__input" 
                     type="text" 
-                    placeholder="John"
-                    name="firstName"
+                    placeholder="1 Address house"
+                    name="address1"
                     value={this.state.address1}
                     onChange={e => this.handleInputChange(e)}
                   />
@@ -50,8 +50,8 @@ class Step2 extends Component {
                   <input 
                     className="field__input" 
                     type="text" 
-                    placeholder="Smith"
-                    name="lastName"
+                    placeholder="Address street"
+                    name="address2"
                     value={this.state.address2}
                     onChange={e => this.handleInputChange(e)}
                   />
@@ -61,13 +61,13 @@ class Step2 extends Component {
               </div>
 
               <div className="field">
-                <label className="field__label">This is an email input</label>
+                <label className="field__label">This is an postcode input</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
                     type="text" 
                     placeholder="email@email.com"
-                    name="email"
+                    name="postcode"
                     value={this.state.postcode}
                     onChange={e => this.handleInputChange(e)}
                   />
