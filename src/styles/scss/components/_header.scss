@@ -4,6 +4,7 @@
     grid-area: header;
     display: flex;
     color: var(--dark4);
+
   }
   
   .he-logo {
@@ -35,7 +36,7 @@
     padding: 1rem;
     margin: 1rem .5rem;
     cursor: pointer;
-    color: var(--light1);
+    color: var(--dark1);
   
     &:hover,
     &.active {
