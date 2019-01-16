@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
+
 import './styles/css/App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -12,6 +13,7 @@ class App extends Component {
   state = {
     text: "Logo",
     score: 25,
+    toDashboard: false,
     formDetails: null,
     formDetails2: null,
     formDetails3: null,
@@ -48,13 +50,13 @@ class App extends Component {
       formDetails: maState
     });
   };
-
+  
   setNameInApp2 = (maState) => {
     this.setState({
       formDetails2: maState
     });
   };
-
+  
   setNameInApp3 = (maState) => {
     this.setState({
       formDetails3: maState

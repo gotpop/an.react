@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-// import Input from "./forms/Input";
+import { Redirect } from "react-router-dom";
 
 class Step1 extends Component {
 
     state = {
       title: "Step 1",
+      navigateToNextPage: false,
       firstName: "",
       lastName: "",
       email: ""
@@ -18,9 +19,17 @@ class Step1 extends Component {
     handleSubmit = (e) => {
       e.preventDefault();
       this.props.setNameInApp(this.state);
+      this.setState({ 
+        navigateToNextPage: true
+      });
     }
-  
+    
     render() {
+      // Redirect to next page
+      if (this.state.navigateToNextPage === true) {
+         return <Redirect push to="./step2/" />
+      }
+
       return (
         <main className="ap__route ma">
           <h2 className="ma_title">{ this.state.title }</h2>
