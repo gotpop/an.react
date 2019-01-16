@@ -1,0 +1,71 @@
+// Forms 
+
+button {
+  background: var(--light1);
+  padding: 1rem 3rem;
+  border: none;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+  background: white;
+  border: none;
+}
+
+legend {
+  background: white;
+  padding: .2em 1em;
+}
+
+// Fields
+.field__validation {
+  display: none;
+}
+
+.field {
+  background: var(--light1);
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+
+.field__label {
+  display: inline-flex;
+  margin-bottom: 1em;
+}
+
+.field__wrap {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.field__input {
+  margin-bottom: 1em;
+  display: inline-flex;
+  padding: 1rem;
+  flex: 1;
+}
+
+.field__svg {
+  max-width: 10px;
+  max-height: 10px;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.action-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: var(--light1);
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.btn--primary {
+  background: var(--light1);
+  margin-left: 1rem;
+}

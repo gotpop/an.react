@@ -1,0 +1,54 @@
+// Header
+
+ .he {
+    grid-area: header;
+    display: flex;
+    color: var(--dark4);
+  }
+  
+  .he-logo {
+    flex: 0 2 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--light1);
+    padding: 1rem;
+  }
+  
+  .he-logo__title {
+    margin: 0;
+  }
+  
+  .he-logo__image {
+    max-width: 10rem;
+  }
+  
+  .he-nav {
+    background: var(--light1);
+    flex: 2 2 auto;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .he-nav__item {
+    padding: 1rem;
+    margin: 1rem .5rem;
+    cursor: pointer;
+    color: var(--light1);
+  
+    &:hover,
+    &.active {
+      background: black;
+      transition: all .4s ease;
+    }
+  }
+  
+  .he-nav__image-wrap {
+    flex: 2 2 70px;
+    cursor: pointer;
+  }
+  
+  .he-nav__image {
+    max-width: 70px;
+  }

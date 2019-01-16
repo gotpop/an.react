@@ -1,0 +1,23 @@
+// Label
+
+.ap {
+    background: var(--dark1);
+    display: grid;
+    grid-row: 1;
+    min-height: 100vh;
+    grid-template-areas: 
+              "header header header"
+              ". main ."
+              "footer footer footer";
+    grid-template-rows: auto 1fr 130px;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+  
+  .ap__route {
+    background: var(--light12);
+    grid-area: main;
+    padding: 2rem;
+  }
+  
+ 
+  
