@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { Redirect } from "react-router-dom";
 
 class Step2 extends Component {
 
   state = {
     title: "Step 2",
+    navigateToNextPage: false,
     address1: "",
     address2: "",
     postcode: ""
@@ -17,9 +19,17 @@ class Step2 extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.setNameInApp2(this.state);
+    this.setState({ 
+      navigateToNextPage: true
+    });
   }
   
   render() {
+    // Redirect to next page
+    if (this.state.navigateToNextPage === true) {
+      return <Redirect push to="./step2/" />
+    }
+
     return (
       <main className="ap__route ma">
         <h2 className="ma_title">{ this.state.title }</h2>
