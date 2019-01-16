@@ -17,7 +17,7 @@ class Step2 extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.setNameInApp(this.state);
+    this.props.setNameInApp2(this.state);
   }
   
   render() {

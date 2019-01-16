@@ -16,7 +16,7 @@ class Step3 extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.setNameInApp(this.state);
+    this.props.setNameInApp3(this.state);
   }
   
   render() {
@@ -88,6 +88,6 @@ class Step3 extends Component {
       </main>
     );
   }
-  }
+}
 
   export default Step3;

@@ -13,6 +13,8 @@ class App extends Component {
     text: "Logo",
     score: 25,
     formDetails: null,
+    formDetails2: null,
+    formDetails3: null,
     menuItems: [
       {
         key: 1,
