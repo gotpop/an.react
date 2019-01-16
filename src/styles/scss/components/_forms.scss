@@ -43,6 +43,11 @@ legend {
   display: inline-flex;
   padding: 1rem;
   flex: 1;
+  border: 1px solid rgba(brown, 0);
+
+  &:required {
+    border-bottom: 1px solid brown;
+  }
 }
 
 .field__svg {
