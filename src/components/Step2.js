@@ -76,6 +76,7 @@ class Step2 extends Component {
                     className="field__input" 
                     type="text" 
                     placeholder="email@email.com"
+                    required="required"
                     name="postcode"
                     value={this.state.postcode}
                     onChange={e => this.handleInputChange(e)}

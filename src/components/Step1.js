@@ -44,6 +44,7 @@ class Step1 extends Component {
                     className="field__input" 
                     type="text" 
                     placeholder="John"
+                    required="required"
                     name="firstName"
                     value={this.state.firstName}
                     onChange={e => this.handleInputChange(e)}
