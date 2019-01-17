@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from "./Button";
 
-class Home extends Component {
+class Summary extends Component {
 
     state = {
       text: "Home content area"
@@ -16,6 +16,6 @@ class Home extends Component {
         </main>
       );
     }
-  }
+}
 
-  export default Home;
+export default Summary;
