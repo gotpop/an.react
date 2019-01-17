@@ -14,6 +14,7 @@
     "yarn": "^1.13.0"
   },
   "scripts": {
+    "now": "now",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
