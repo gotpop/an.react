@@ -37,11 +37,12 @@
     margin: 1rem .5rem;
     cursor: pointer;
     color: var(--dark1);
-  
+    
     &:hover,
     &.active {
       background: black;
       transition: all .4s ease;
+      color: var(--light1);
     }
   }
   

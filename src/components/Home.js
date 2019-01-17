@@ -11,6 +11,7 @@ class Home extends Component {
       return (
         <main className="ap__route ma">
           <h2 className="ma_title">{ this.state.text }</h2>
+          <p>This is a multi step form demo built with React and CSS Grid.</p>
           <Button />
         </main>
       );
