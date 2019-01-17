@@ -40,7 +40,7 @@
     
     &:hover,
     &.active {
-      background: black;
+      color: var(--dark1);
       transition: all .4s ease;
       color: var(--light1);
     }
@@ -49,6 +49,7 @@
   .he-nav__image-wrap {
     flex: 2 2 70px;
     cursor: pointer;
+    color: var(--dark1);
   }
   
   .he-nav__image {
