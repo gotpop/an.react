@@ -51,11 +51,11 @@ class Step3 extends Component {
                 />
                 <svg className="field__svg"></svg>
               </div>
-              <small className="field__validation">This is a validation message</small>
+              <small className="field__validation">Please add a valid username</small>
             </div>
 
             <div className="field">
-              <label className="field__label">Enter a password</label>
+              <label className="field__label">Password</label>
               <div className="field__wrap">
                 <input 
                   className="field__input" 
@@ -67,11 +67,11 @@ class Step3 extends Component {
                 />
                 <svg className="field__svg"></svg>
               </div>
-              <small className="field__validation">This is a validation message</small>
+              <small className="field__validation">Please add a valid password</small>
             </div>
 
             <div className="field">
-              <label className="field__label">This is an email input</label>
+              <label className="field__label">Email address</label>
               <div className="field__wrap">
                 <input 
                   className="field__input" 
@@ -83,7 +83,7 @@ class Step3 extends Component {
                 />
                 <svg className="field__svg"></svg>
               </div>
-              <small className="field__validation">This is a validation message</small>
+              <small className="field__validation">Please add a valid email address</small>
             </div>
           </fieldset>
           <fieldset className="form__fieldset">
