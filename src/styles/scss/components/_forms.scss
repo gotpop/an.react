@@ -8,24 +8,18 @@ button {
 
 fieldset {
   margin-bottom: 1rem;
-  background: white;
-  border: none;
+  padding: 1rem;
+  border: 1px dotted rgba(white, .7);
 }
 
 legend {
-  background: white;
+  margin: 0 0 1em 0;
   padding: .2em 1em;
 }
 
 // Fields
 .field__validation {
   display: none;
-}
-
-.field {
-  background: var(--light1);
-  margin-bottom: 1rem;
-  padding: 2rem;
 }
 
 .field__label {
@@ -41,9 +35,10 @@ legend {
 .field__input {
   margin-bottom: 1em;
   display: inline-flex;
+  border-radius: 2px;
   padding: 1rem;
   flex: 1;
-  border: 1px solid rgba(brown, 0);
+  border: 1px solid rgba(black, .2);
 
   &:required {
     border-bottom: 1px solid brown;

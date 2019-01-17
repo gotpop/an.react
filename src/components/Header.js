@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../assets/logo.svg';
+import logoGithub, {ReactComponent as MyLogoGithub}  from '../assets/logo-github.svg';
 import MenuItem from './MenuItem';
 import { Link } from "react-router-dom";
 
@@ -7,16 +8,8 @@ class Header extends Component {
 
     state = {
       text: "Logo",
-      score: 25,
+      altText: "Click here to see this project on Github",
     };
-
-    make = () => {
-      this.setState( prevSate => {
-        return {
-          score: prevSate.score + 1
-        }
-      });
-    }
 
     render() {
       return (
@@ -37,8 +30,7 @@ class Header extends Component {
               )}
             </nav>
             <div className="he-nav__image-wrap" onClick={this.make}>
-              <img src={logo} className="he-nav__image" alt="logo" />
-              <small className="he-nav__small">{ this.state.score }</small>
+              <MyLogoGithub className="he-nav__image" />
             </div>
           </div>
         </header>
