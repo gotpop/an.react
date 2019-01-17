@@ -38,7 +38,7 @@ class Step2 extends Component {
               <legend className="form__legend">Details</legend>
               
               <div className="field">
-                <label className="field__label">This is a address1 input</label>
+                <label className="field__label">Address 1</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
@@ -50,11 +50,11 @@ class Step2 extends Component {
                   />
                   <svg className="field__svg"></svg>
                 </div>
-                <small className="field__validation">This is a validation message for address1</small>
+                <small className="field__validation">Please add a valid address</small>
               </div>
 
               <div className="field">
-                <label className="field__label">This is a address2 input</label>
+                <label className="field__label">Address 2</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
@@ -66,11 +66,11 @@ class Step2 extends Component {
                   />
                   <svg className="field__svg"></svg>
                 </div>
-                <small className="field__validation">This is a validation message for address2</small>
+                <small className="field__validation">Please add a valid address</small>
               </div>
 
               <div className="field">
-                <label className="field__label">This is an postcode input</label>
+                <label className="field__label">Postcode</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
@@ -83,7 +83,7 @@ class Step2 extends Component {
                   />
                   <svg className="field__svg"></svg>
                 </div>
-                <small className="field__validation">This is an postcode validation message</small>
+                <small className="field__validation">Please add a valid postcode</small>
               </div>
             </fieldset>
             <fieldset className="form__fieldset">
