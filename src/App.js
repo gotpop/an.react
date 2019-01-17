@@ -75,7 +75,7 @@ class App extends Component {
           <Route path="/step1" render={ () => <Step1 setNameInApp={this.setNameInApp} />} />
           <Route path="/step2" render={ () => <Step2 setNameInApp2={this.setNameInApp2} />} />
           <Route path="/step3" render={ () => <Step3 setNameInApp3={this.setNameInApp3} />} />
-          <Route exact path="/" component={Summary} />
+          <Route exact path="/summary" component={Summary} />
           <Footer />
         </div>
       </BrowserRouter>
