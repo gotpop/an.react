@@ -8,6 +8,8 @@ import Home from './components/Home';
 import Step1 from './components/Step1';
 import Step2 from './components/Step2';
 import Step3 from './components/Step3';
+import Summary from './components/Summary';
+
 class App extends Component {
   
   state = {
@@ -73,6 +75,7 @@ class App extends Component {
           <Route path="/step1" render={ () => <Step1 setNameInApp={this.setNameInApp} />} />
           <Route path="/step2" render={ () => <Step2 setNameInApp2={this.setNameInApp2} />} />
           <Route path="/step3" render={ () => <Step3 setNameInApp3={this.setNameInApp3} />} />
+          <Route exact path="/" component={Summary} />
           <Footer />
         </div>
       </BrowserRouter>
