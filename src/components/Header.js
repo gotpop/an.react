@@ -29,8 +29,10 @@ class Header extends Component {
                 />
               )}
             </nav>
-            <div className="he-nav__image-wrap" onClick={this.make}>
-              <MyLogoGithub className="he-nav__image" />
+            <div className="he-nav__image-wrap">
+              <a className="he-nav__link-ext" target="_blank" href="https://github.com/gotpop/an.react">
+                <MyLogoGithub className="he-nav__image" />
+              </a>
             </div>
           </div>
         </header>
