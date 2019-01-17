@@ -17,7 +17,7 @@ class Header extends Component {
           <section className="he-logo">
             <Link className="he-logo__link" to="/">
               <h2 className="he-logo__title">{ this.state.text }</h2>
-              <MyLogoGrid className="he-nav__image" />
+              <MyLogoGrid className="he-nav__svg" />
             </Link>
           </section>
           <div className="he-nav">

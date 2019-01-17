@@ -7,7 +7,7 @@
   }
   
   .he-logo {
-    flex: 1 auto;
+    flex: 0 1 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -37,6 +37,7 @@
 
   .he-nav__svg {
     color: var(--primary);
+    max-height: 70px;
   }
   
   .he-logo__image {
