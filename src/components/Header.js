@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logoGithub, {ReactComponent as MyLogoGithub}  from '../assets/logo-github.svg';
-import logoGrid, {ReactComponent as MyLogoGrid}  from '../assets/logo-grid.svg';
+import { ReactComponent as MyLogoGithub }  from '../assets/logo-github.svg';
+import { ReactComponent as MyLogoGrid }  from '../assets/logo-grid.svg';
 import MenuItem from './MenuItem';
 import { Link } from "react-router-dom";
 
