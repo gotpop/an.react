@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 class Step1 extends Component {
 
     state = {
-      title: "Step 1",
+      title: "Add a user",
       navigateToNextPage: false,
       firstName: "",
       lastName: "",
@@ -35,10 +35,10 @@ class Step1 extends Component {
           <h2 className="ma_title">{ this.state.title }</h2>
           <form className="form" onSubmit={this.handleSubmit}>
             <fieldset className="form__fieldset">
-              <legend className="form__legend">Details</legend>
+              <legend className="form__legend">Personal Details</legend>
               
               <div className="field">
-                <label className="field__label">This is a first name input</label>
+                <label className="field__label">First name</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
@@ -51,11 +51,11 @@ class Step1 extends Component {
                   />
                   <svg className="field__svg"></svg>
                 </div>
-                <small className="field__validation">This is a validation message for first name</small>
+                <small className="field__validation">Please enter a first name</small>
               </div>
 
               <div className="field">
-                <label className="field__label">This is a last name input</label>
+                <label className="field__label">Last name</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
@@ -67,11 +67,11 @@ class Step1 extends Component {
                   />
                   <svg className="field__svg"></svg>
                 </div>
-                <small className="field__validation">This is a validation message for last name</small>
+                <small className="field__validation">Please enter a last name</small>
               </div>
 
               <div className="field">
-                <label className="field__label">This is an email input</label>
+                <label className="field__label">Email address</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
@@ -83,7 +83,7 @@ class Step1 extends Component {
                   />
                   <svg className="field__svg"></svg>
                 </div>
-                <small className="field__validation">This is an email validation message</small>
+                <small className="field__validation">Please enter a valid email address</small>
               </div>
             </fieldset>
             <fieldset className="form__fieldset">

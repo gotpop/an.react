@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 class Step3 extends Component {
 
   state = {
-    title: "Create an account",
+    title: "Add a user",
     navigateToNextPage: false,
     username: "",
     password: "",
