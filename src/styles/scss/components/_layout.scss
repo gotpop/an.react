@@ -1,7 +1,7 @@
 // Label
 
 .ap {
-    background: var(--dark1);
+    background: var(--white);
     display: grid;
     grid-row: 1;
     min-height: 100vh;
@@ -11,12 +11,14 @@
               "footer footer footer";
     grid-template-rows: auto 1fr 130px;
     grid-template-columns: 1fr 6fr 1fr;
+    grid-gap: 1rem;
 }
   
   .ap__route {
     background: var(--light2);
     grid-area: main;
     padding: 2rem;
+    min-height: 80vh;
   }
   
  

@@ -8,12 +8,20 @@
   }
   
   .he-logo {
-    flex: 0 2 220px;
+    flex: 1 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background: var(--light1);
     padding: 1rem;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .he-logo__link {
+    display: flex;
+    flex: 1;
+    align-items: center;
   }
   
   .he-logo__title {
@@ -21,15 +29,13 @@
   }
   
   .he-logo__image {
-    max-width: 10rem;
+    max-width: 6rem;
   }
   
   .he-nav {
-    background: var(--light1);
     flex: 2 2 auto;
     display: flex;
     align-items: center;
-    padding: 2rem;
   }
   
   .he-nav__item {
@@ -47,9 +53,14 @@
   }
   
   .he-nav__image-wrap {
-    flex: 2 2 70px;
+    flex: 0 0 70px;
+    margin: 0 0 0 auto;
+    padding: .5rem;
     cursor: pointer;
-    color: var(--dark1);
+    background: var(--dark3);
+    color: var(--light1);
+    justify-content: flex-end;
+    display: flex;
   }
   
   .he-nav__image {

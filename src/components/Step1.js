@@ -85,7 +85,8 @@ class Step1 extends Component {
                 </div>
                 <small className="field__validation">This is an email validation message</small>
               </div>
-
+            </fieldset>
+            <fieldset className="form__fieldset">
               <div className="action-row">
                 <button
                   className="btn btn--secondary"

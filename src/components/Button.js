@@ -4,7 +4,7 @@ class Button extends Component {
     render() {
       return (
         <button className="button">
-            This is a button
+            Get started
         </button>
       );
     }

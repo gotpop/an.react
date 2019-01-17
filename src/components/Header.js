@@ -22,7 +22,7 @@ class Header extends Component {
       return (
         <header className="he">
           <section className="he-logo">
-            <Link to="/">
+            <Link className="he-logo__link" to="/">
               <h2 className="he-logo__title">{ this.state.text }</h2>
               <img src={logo} className="he-logo__image" alt="logo" />
             </Link>
