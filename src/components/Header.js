@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 class Header extends Component {
 
     state = {
-      text: "Logo",
+      text: "React Grid",
       altText: "Click here to see this project on Github",
     };
 
