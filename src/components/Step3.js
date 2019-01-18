@@ -35,7 +35,7 @@ class Step3 extends Component {
         <h2 className="ma_title">{ this.state.title }</h2>
         <form className="form" onSubmit={this.handleSubmit}>
           <fieldset className="form__fieldset">
-            <legend className="form__legend">Details</legend>
+            <legend className="form__legend">Login</legend>
             
             <div className="field">
               <label className="field__label">Username</label>

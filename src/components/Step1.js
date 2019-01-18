@@ -38,10 +38,11 @@ class Step1 extends Component {
               <legend className="form__legend">Personal Details</legend>
               
               <div className="field">
-                <label className="field__label">First name</label>
+                <label className="field__label" for="firstName">First name</label>
                 <div className="field__wrap">
                   <input 
-                    className="field__input" 
+                    className="field__input"
+                    id="firstName" 
                     type="text" 
                     placeholder="John"
                     required="required"
@@ -55,12 +56,13 @@ class Step1 extends Component {
               </div>
 
               <div className="field">
-                <label className="field__label">Last name</label>
+                <label className="field__label" for="lastName">Last name</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
                     type="text" 
                     placeholder="Smith"
+                    id="lastName"
                     name="lastName"
                     value={this.state.lastName}
                     onChange={e => this.handleInputChange(e)}
@@ -71,11 +73,12 @@ class Step1 extends Component {
               </div>
 
               <div className="field">
-                <label className="field__label">Email address</label>
+                <label className="field__label" for="email">Email address</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
-                    type="text" 
+                    type="text"
+                    id="email"
                     placeholder="email@email.com"
                     name="email"
                     value={this.state.email}
