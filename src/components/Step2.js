@@ -38,11 +38,12 @@ class Step2 extends Component {
               <legend className="form__legend">Address</legend>
               
               <div className="field">
-                <label className="field__label">Address 1</label>
+                <label className="field__label" for="address1">Address 1</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
                     type="text" 
+                    id="address1"
                     placeholder="1 Address house"
                     name="address1"
                     value={this.state.address1}
@@ -54,12 +55,13 @@ class Step2 extends Component {
               </div>
 
               <div className="field">
-                <label className="field__label">Address 2</label>
+                <label className="field__label" for="address2">Address 2</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
                     type="text" 
                     placeholder="Address street"
+                    id="address2"
                     name="address2"
                     value={this.state.address2}
                     onChange={e => this.handleInputChange(e)}
@@ -70,12 +72,13 @@ class Step2 extends Component {
               </div>
 
               <div className="field">
-                <label className="field__label">Postcode</label>
+                <label className="field__label" for="postcode">Postcode</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
                     type="text" 
-                    placeholder="email@email.com"
+                    id="postcode" 
+                    placeholder="N1 2WW"
                     required="required"
                     name="postcode"
                     value={this.state.postcode}

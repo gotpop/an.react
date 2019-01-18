@@ -38,11 +38,12 @@ class Step3 extends Component {
             <legend className="form__legend">Login</legend>
             
             <div className="field">
-              <label className="field__label">Username</label>
+              <label className="field__label" for="username">Username</label>
               <div className="field__wrap">
                 <input 
                   className="field__input" 
-                  type="text" 
+                  type="text"
+                  id="username"
                   placeholder="myusername"
                   required="required"
                   name="username"
@@ -55,11 +56,12 @@ class Step3 extends Component {
             </div>
 
             <div className="field">
-              <label className="field__label">Password</label>
+              <label className="field__label" for="password">Password</label>
               <div className="field__wrap">
                 <input 
                   className="field__input" 
-                  type="text" 
+                  type="text"
+                  id="password"
                   placeholder="Smith"
                   name="password"
                   value={this.state.password}
@@ -71,11 +73,12 @@ class Step3 extends Component {
             </div>
 
             <div className="field">
-              <label className="field__label">Email address</label>
+              <label className="field__label" for="confirmPassword">Email address</label>
               <div className="field__wrap">
                 <input 
                   className="field__input" 
-                  type="text" 
+                  type="text"
+                  id="confirmPassword"
                   placeholder="email@email.com"
                   name="confirmPassword"
                   value={this.state.confirmPassword}
