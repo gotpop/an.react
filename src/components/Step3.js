@@ -27,7 +27,7 @@ class Step3 extends Component {
   render() {
     // Redirect to next page
     if (this.state.navigateToNextPage === true) {
-      return <Redirect push to="./Summary/" />
+      return <Redirect push to="./summary/" />
     }
    
     return (

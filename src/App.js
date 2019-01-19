@@ -16,7 +16,7 @@ class App extends Component {
     text: "Logo",
     score: 25,
     toDashboard: false,
-    formDetails: null,
+    formDetails: "Liam bla bla",
     formDetails2: null,
     formDetails3: null,
     menuItems: [
@@ -48,6 +48,7 @@ class App extends Component {
   };
 
   setNameInApp = (maState) => {
+    console.log('maState', maState)
     this.setState({
       formDetails: maState
     });
@@ -75,7 +76,9 @@ class App extends Component {
           <Route path="/step1" render={ () => <Step1 setNameInApp={this.setNameInApp} />} />
           <Route path="/step2" render={ () => <Step2 setNameInApp2={this.setNameInApp2} />} />
           <Route path="/step3" render={ () => <Step3 setNameInApp3={this.setNameInApp3} />} />
-          <Route exact path="/summary" component={Summary} />
+          <Route path="/summary" render={ () => <Summary formDetails={this.state.formDetails}
+                                                         formDetails2={this.state.formDetails2} 
+                                                         formDetails3={this.state.formDetails3} />} />
           <Footer />
         </div>
       </BrowserRouter>
