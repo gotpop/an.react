@@ -34,31 +34,33 @@ class Summary extends Component {
               </li>
               <li className="summary__item">
                 <span className="summary__key">Address 1</span>
-                <span className="summary__value">{ this.props.formDetails.address1 }</span>
+                <span className="summary__value">{ this.props.formDetails2.address1 }</span>
               </li>
               <li className="summary__item">
                 <span className="summary__key">Address 2</span>
-                <span className="summary__value">{ this.props.formDetails.address2 }</span>
+                <span className="summary__value">{ this.props.formDetails2.address2 }</span>
               </li>
               <li className="summary__item">
                 <span className="summary__key">Post code</span>
-                <span className="summary__value">{ this.props.formDetails.postcode }</span>
+                <span className="summary__value">{ this.props.formDetails2.postcode }</span>
               </li>
               <li className="summary__item">
                 <span className="summary__key">User name</span>
-                <span className="summary__value">{ this.props.formDetails.username }</span>
+                <span className="summary__value">{ this.props.formDetails3.username }</span>
               </li>
               <li className="summary__item">
                 <span className="summary__key">Password</span>
-                <span className="summary__value">{ this.props.formDetails.password }</span>
+                <span className="summary__value">{ this.props.formDetails3.password }</span>
               </li>
               <li className="summary__item">
                 <span className="summary__key">Confirm Password</span>
-                <span className="summary__value">{ this.props.formDetails.confirmPassword }</span>
+                <span className="summary__value">{ this.props.formDetails3.confirmPassword }</span>
               </li>
             </ul>
           </section>
-          <Link className="btn btn--primary" to="/">Continue to home page</Link>
+          <div className="action-row">
+            <Link className="btn btn--primary" to="/">Continue to home page</Link>
+          </div>
         </main>
       );
     }
