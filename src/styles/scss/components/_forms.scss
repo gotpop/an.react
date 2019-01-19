@@ -18,6 +18,7 @@ button {
   display: block;
   width: 100%;
   float: left;
+  font-weight: bold;
 }
 
 // Fields
@@ -41,12 +42,13 @@ button {
   border: 1px solid rgba(black, .2);
 
   &:required {
-    border-bottom: 1px solid brown;
+    border-bottom: 1px solid var(--warning);
   }
 }
 
 .field__validation {
   display: none;
+  color: var(--warning);
   
   .field__input:invalid ~ & {
     display: flex;

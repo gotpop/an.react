@@ -51,8 +51,8 @@ class Step2 extends Component {
                     onChange={e => this.handleInputChange(e)}
                   />
                   <svg className="field__svg"></svg>
+                  <small className="field__validation">Please add a valid address</small>
                 </div>
-                <small className="field__validation">Please add a valid address</small>
               </div>
 
               <div className="field">
@@ -69,8 +69,8 @@ class Step2 extends Component {
                     onChange={e => this.handleInputChange(e)}
                   />
                   <svg className="field__svg"></svg>
+                  <small className="field__validation">Please add a valid address</small>
                 </div>
-                <small className="field__validation">Please add a valid address</small>
               </div>
 
               <div className="field">
@@ -87,8 +87,8 @@ class Step2 extends Component {
                     onChange={e => this.handleInputChange(e)}
                   />
                   <svg className="field__svg"></svg>
+                  <small className="field__validation">Please add a valid postcode</small>
                 </div>
-                <small className="field__validation">Please add a valid postcode</small>
               </div>
             </fieldset>
             <fieldset className="form__fieldset">
