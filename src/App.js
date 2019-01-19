@@ -16,7 +16,7 @@ class App extends Component {
     text: "Logo",
     score: 25,
     toDashboard: false,
-    formDetails: "Liam bla bla",
+    formDetails: null,
     formDetails2: null,
     formDetails3: null,
     menuItems: [
