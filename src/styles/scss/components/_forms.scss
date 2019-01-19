@@ -42,10 +42,10 @@ button {
   flex: 1;
   border: 1px solid rgba(black, .2);
 
-  &:invalid {
+  &.is-invalid:invalid {
     border-bottom: 1px solid var(--warning);
   }
-  
+
   &:valid {
     border-bottom: 1px solid var(--success);
   }
@@ -55,7 +55,7 @@ button {
   display: none;
   color: var(--warning);
   
-  .field__input:invalid ~ & {
+  .field__input.is-invalid:invalid ~ & {
     display: flex;
   }
 }

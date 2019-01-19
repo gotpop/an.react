@@ -23,6 +23,16 @@ class Step1 extends Component {
         navigateToNextPage: true
       });
     }
+
+    checkValid = (e) => {
+      if ( e.target.checkValidity() ) {
+        e.target.classList.add('is-valid');
+        e.target.classList.remove('is-invalid');
+      } else {
+        e.target.classList.add('is-invalid');
+        e.target.classList.remove('is-valid');
+      }
+    }
     
     render() {
       // Redirect to next page
@@ -49,7 +59,8 @@ class Step1 extends Component {
                     name="firstName"
                     value={this.state.firstName}
                     onChange={e => this.handleInputChange(e)}
-                  />
+                    onBlur={e => this.checkValid(e)}
+                    />
                   <svg className="field__svg"></svg>
                   <small className="field__validation">Please enter a first name</small>
                 </div>
@@ -67,7 +78,8 @@ class Step1 extends Component {
                     name="lastName"
                     value={this.state.lastName}
                     onChange={e => this.handleInputChange(e)}
-                  />
+                    onBlur={e => this.checkValid(e)}
+                    />
                   <svg className="field__svg"></svg>
                   <small className="field__validation">Please enter a last name</small>
                 </div>
@@ -85,7 +97,8 @@ class Step1 extends Component {
                     name="email"
                     value={this.state.email}
                     onChange={e => this.handleInputChange(e)}
-                  />
+                    onBlur={e => this.checkValid(e)}
+                    />
                   <svg className="field__svg"></svg>
                   <small className="field__validation">Please enter a valid email address</small>
                 </div>

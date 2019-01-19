@@ -23,6 +23,16 @@ class Step3 extends Component {
       navigateToNextPage: true
     });
   }
+
+  checkValid = (e) => {
+    if ( e.target.checkValidity() ) {
+      e.target.classList.add('is-valid');
+      e.target.classList.remove('is-invalid');
+    } else {
+      e.target.classList.add('is-invalid');
+      e.target.classList.remove('is-valid');
+    }
+  }
   
   render() {
     // Redirect to next page
@@ -49,6 +59,7 @@ class Step3 extends Component {
                   name="username"
                   value={this.state.username}
                   onChange={e => this.handleInputChange(e)}
+                  onBlur={e => this.checkValid(e)}
                   />
                 <svg className="field__svg"></svg>
                 <small className="field__validation">Please add a valid username</small>
@@ -67,6 +78,7 @@ class Step3 extends Component {
                   name="password"
                   value={this.state.password}
                   onChange={e => this.handleInputChange(e)}
+                  onBlur={e => this.checkValid(e)}
                   />
                 <svg className="field__svg"></svg>
                 <small className="field__validation">Please add a valid password</small>
@@ -85,7 +97,8 @@ class Step3 extends Component {
                   name="confirmPassword"
                   value={this.state.confirmPassword}
                   onChange={e => this.handleInputChange(e)}
-                />
+                  onBlur={e => this.checkValid(e)}
+                  />
                 <svg className="field__svg"></svg>
                 <small className="field__validation">Please add a valid email address</small>
               </div>
@@ -107,4 +120,4 @@ class Step3 extends Component {
   }
 }
 
-  export default Step3;
+export default Step3;

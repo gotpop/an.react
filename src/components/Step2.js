@@ -23,6 +23,16 @@ class Step2 extends Component {
       navigateToNextPage: true
     });
   }
+
+  checkValid = (e) => {
+    if ( e.target.checkValidity() ) {
+      e.target.classList.add('is-valid');
+      e.target.classList.remove('is-invalid');
+    } else {
+      e.target.classList.add('is-invalid');
+      e.target.classList.remove('is-valid');
+    }
+  }
   
   render() {
     // Redirect to next page
@@ -49,7 +59,8 @@ class Step2 extends Component {
                     name="address1"
                     value={this.state.address1}
                     onChange={e => this.handleInputChange(e)}
-                  />
+                    onBlur={e => this.checkValid(e)}
+                    />
                   <svg className="field__svg"></svg>
                   <small className="field__validation">Please add a valid address</small>
                 </div>
@@ -67,7 +78,8 @@ class Step2 extends Component {
                     required="required"
                     value={this.state.address2}
                     onChange={e => this.handleInputChange(e)}
-                  />
+                    onBlur={e => this.checkValid(e)}
+                    />
                   <svg className="field__svg"></svg>
                   <small className="field__validation">Please add a valid address</small>
                 </div>
@@ -85,7 +97,8 @@ class Step2 extends Component {
                     name="postcode"
                     value={this.state.postcode}
                     onChange={e => this.handleInputChange(e)}
-                  />
+                    onBlur={e => this.checkValid(e)}
+                    />
                   <svg className="field__svg"></svg>
                   <small className="field__validation">Please add a valid postcode</small>
                 </div>
