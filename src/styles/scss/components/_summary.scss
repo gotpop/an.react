@@ -3,3 +3,25 @@
 .summary {
     margin-bottom: 2rem;
 }
+
+.summary__list {
+    margin: 0 0 2rem 0;
+    padding: 0;
+}
+
+.summary__item {
+    list-style-type: none;
+    display: flex;
+
+    &:nth-child(odd) {
+        background: var(--light1);
+    }
+}
+
+.summary__key {
+    padding: 1rem;
+}
+
+.summary__value {
+    padding: 1rem;
+}
