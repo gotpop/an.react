@@ -38,7 +38,7 @@ class Step1 extends Component {
               <legend className="form__legend">Personal Details</legend>
               
               <div className="field">
-                <label className="field__label" for="firstName">First name</label>
+                <label className="field__label" htmlFor="firstName">First name</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input"
@@ -51,12 +51,12 @@ class Step1 extends Component {
                     onChange={e => this.handleInputChange(e)}
                   />
                   <svg className="field__svg"></svg>
+                  <small className="field__validation">Please enter a first name</small>
                 </div>
-                <small className="field__validation">Please enter a first name</small>
               </div>
 
               <div className="field">
-                <label className="field__label" for="lastName">Last name</label>
+                <label className="field__label" htmlFor="lastName">Last name</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
@@ -73,7 +73,7 @@ class Step1 extends Component {
               </div>
 
               <div className="field">
-                <label className="field__label" for="email">Email address</label>
+                <label className="field__label" htmlFor="email">Email address</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 

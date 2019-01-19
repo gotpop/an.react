@@ -38,7 +38,7 @@ class Step3 extends Component {
             <legend className="form__legend">Login</legend>
             
             <div className="field">
-              <label className="field__label" for="username">Username</label>
+              <label className="field__label" htmlFor="username">Username</label>
               <div className="field__wrap">
                 <input 
                   className="field__input" 
@@ -56,7 +56,7 @@ class Step3 extends Component {
             </div>
 
             <div className="field">
-              <label className="field__label" for="password">Password</label>
+              <label className="field__label" htmlFor="password">Password</label>
               <div className="field__wrap">
                 <input 
                   className="field__input" 
@@ -73,7 +73,7 @@ class Step3 extends Component {
             </div>
 
             <div className="field">
-              <label className="field__label" for="confirmPassword">Email address</label>
+              <label className="field__label" htmlFor="confirmPassword">Email address</label>
               <div className="field__wrap">
                 <input 
                   className="field__input" 

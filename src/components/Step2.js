@@ -38,7 +38,7 @@ class Step2 extends Component {
               <legend className="form__legend">Address</legend>
               
               <div className="field">
-                <label className="field__label" for="address1">Address 1</label>
+                <label className="field__label" htmlFor="address1">Address 1</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
@@ -55,7 +55,7 @@ class Step2 extends Component {
               </div>
 
               <div className="field">
-                <label className="field__label" for="address2">Address 2</label>
+                <label className="field__label" htmlFor="address2">Address 2</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
@@ -72,7 +72,7 @@ class Step2 extends Component {
               </div>
 
               <div className="field">
-                <label className="field__label" for="postcode">Postcode</label>
+                <label className="field__label" htmlFor="postcode">Postcode</label>
                 <div className="field__wrap">
                   <input 
                     className="field__input" 
