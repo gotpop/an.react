@@ -25,6 +25,7 @@ button {
 .field__label {
   display: inline-flex;
   margin-bottom: 1em;
+  cursor: pointer;
 }
 
 .field__wrap {
@@ -41,8 +42,12 @@ button {
   flex: 1;
   border: 1px solid rgba(black, .2);
 
-  &:required {
+  &:invalid {
     border-bottom: 1px solid var(--warning);
+  }
+  
+  &:valid {
+    border-bottom: 1px solid var(--success);
   }
 }
 

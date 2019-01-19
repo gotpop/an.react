@@ -49,7 +49,7 @@ class Step3 extends Component {
                   name="username"
                   value={this.state.username}
                   onChange={e => this.handleInputChange(e)}
-                />
+                  />
                 <svg className="field__svg"></svg>
                 <small className="field__validation">Please add a valid username</small>
               </div>
@@ -61,12 +61,13 @@ class Step3 extends Component {
                 <input 
                   className="field__input" 
                   type="text"
+                  required="required"
                   id="password"
                   placeholder="Smith"
                   name="password"
                   value={this.state.password}
                   onChange={e => this.handleInputChange(e)}
-                />
+                  />
                 <svg className="field__svg"></svg>
                 <small className="field__validation">Please add a valid password</small>
               </div>
@@ -78,6 +79,7 @@ class Step3 extends Component {
                 <input 
                   className="field__input" 
                   type="text"
+                  required="required"
                   id="confirmPassword"
                   placeholder="email@email.com"
                   name="confirmPassword"
