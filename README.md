@@ -6,8 +6,6 @@ You can add a user by clicking on the link below. Fill out each step and you wil
 ## Live here
 [Click here](https://cra-bxoe2nl1c.now.sh) to see the repo live.
 
-https://cra-27icdlw6j.now.sh
-
 ### Available commands
 
 `now`
