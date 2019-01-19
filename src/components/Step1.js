@@ -63,6 +63,7 @@ class Step1 extends Component {
                     type="text" 
                     placeholder="Smith"
                     id="lastName"
+                    required="required"
                     name="lastName"
                     value={this.state.lastName}
                     onChange={e => this.handleInputChange(e)}
@@ -80,6 +81,7 @@ class Step1 extends Component {
                     type="text"
                     id="email"
                     placeholder="email@email.com"
+                    required="required"
                     name="email"
                     value={this.state.email}
                     onChange={e => this.handleInputChange(e)}

@@ -44,6 +44,7 @@ class Step2 extends Component {
                     className="field__input" 
                     type="text" 
                     id="address1"
+                    required="required"
                     placeholder="1 Address house"
                     name="address1"
                     value={this.state.address1}
@@ -63,6 +64,7 @@ class Step2 extends Component {
                     placeholder="Address street"
                     id="address2"
                     name="address2"
+                    required="required"
                     value={this.state.address2}
                     onChange={e => this.handleInputChange(e)}
                   />
